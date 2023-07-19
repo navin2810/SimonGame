@@ -13,6 +13,14 @@ $(".start").click(function () {
     $(".start").hide()
   }
 });
+$(document).keypress(function (event) {
+  if (event.key==="Enter",!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+    $(".start").hide()
+  }
+});
 
 $(".btn").click(function () {
   let userChosenColour = $(this).attr("id");
