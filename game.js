@@ -92,6 +92,3 @@ function startOver() {
   started = false;
   $(".start").show();
 }
-
-
-
